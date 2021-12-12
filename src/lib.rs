@@ -7,7 +7,7 @@ mod tests {
     #[test]
     fn test_0() {
         let mut logger = Logger::new();
-        logger.write_simple("sfbafiwaegfgbweaf".to_string());
-        logger.write_line("sfbafiweaf{}".to_string(), &["test"]);
+        logger.log_simple("sfbafiwaegfgbweaf".to_string());
+        logger.log_arguments("sfbafiweaf{}".to_string(), &["test"]);
     }
 }

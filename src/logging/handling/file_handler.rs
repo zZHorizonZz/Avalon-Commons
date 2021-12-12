@@ -1,5 +1,6 @@
+use std::fs::File;
 use crate::logging::handling::handler::Handler;
-use crate::logging::logger::Record;
+use crate::logging::logger::{Logger, Record};
 
 pub struct FileHandler;
 
@@ -10,7 +11,7 @@ impl Handler for FileHandler {
 }
 
 impl FileHandler {
-    pub fn new() -> Self {
-        FileHandler {}
+    pub fn new() -> FileHandler {
+        FileHandler
     }
 }
